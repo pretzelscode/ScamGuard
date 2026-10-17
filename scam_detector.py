@@ -8,9 +8,12 @@ INPUT_DIR = BASE / "raw_transcript"
 nlp = spacy.load("en_core_web_sm")
 
 CATEGORIES = {
-    "Untraceable payment": (30, ["gift card", "itunes card", "google play card", "wire transfer",
-                                 "western union", "moneygram", "bitcoin", "cryptocurrency",
-                                 "cash app", "zelle"]),
+    "Untraceable payment": (30, ["need you to buy a gift card", "please purchase a gift card", 
+                                 "you need a gift card", "give me the gift card number",
+                                 "send photos of the card", "verify the gift card number", "gift card", 
+                                 "purchase itunes card", "purchase google play card", "wire transfer",
+                                 "go to western union", "moneygram", "bitcoin", "cryptocurrency",
+                                 "send money through cash app", "send money through zelle"]),
     "Secrecy":             (25, ["do not tell anyone", "do not tell", "keep this secret",
                                  "keep it between us", "confidential", "do not hang up"]),
     "Remote access":       (25, ["remote access", "anydesk", "teamviewer", "download the software",
@@ -18,7 +21,9 @@ CATEGORIES = {
     "Urgency":             (15, ["right now", "immediately", "urgent", "within the hour",
                                  "last chance", "today only", "act now"]),
     "Threat / fear":       (20, ["arrest warrant", "arrest", "lawsuit", "legal action", "suspend",
-                                 "account be freeze", "compromise", "virus", "hack", "fraud alert"]),
+                                 "account be freeze", "account compromised", "virus", "your account was hacked", 
+                                 "fraud alert", "immediate payment required", "account suspended immediately",
+                                 "pay now to avoid IRS penalty"]),
     "Sensitive info":      (40, ["social security number", "give me your password", "I will need your password","verification code",
                                  "pin number", "routing number", "card number", "bank account"]),
 }
