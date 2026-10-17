@@ -24,7 +24,7 @@ CATEGORIES = {
                                  "account be freeze", "account compromised", "virus", "your account was hacked", 
                                  "fraud alert", "immediate payment required", "account suspended immediately",
                                  "pay now to avoid IRS penalty"]),
-    "Sensitive info":      (40, ["social security number", "give me your password", "I will need your password","verification code",
+    "Sensitive info":      (40, ["give me your social security number", "give me your password", "I will need your password","verification code",
                                  "pin number", "routing number", "card number", "bank account"]),
 }
 

@@ -25,3 +25,5 @@ class TranscriptReceiver:
     def save_transcript(self):
         with open("raw_transcript/rawTranscript.txt", "w", encoding="utf-8") as file:
             file.write(self.input_chars)
+
+        return file
