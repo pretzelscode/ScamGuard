@@ -19,7 +19,7 @@ CATEGORIES = {
                                  "last chance", "today only", "act now"]),
     "Threat / fear":       (20, ["arrest warrant", "arrest", "lawsuit", "legal action", "suspend",
                                  "account be freeze", "compromise", "virus", "hack", "fraud alert"]),
-    "Sensitive info":      (40, ["social security number", "give me your password", "I will need your password","verification code",
+    "Sensitive info":      (40, ["give me your social security number", "give me your password", "I will need your password","verification code",
                                  "pin number", "routing number", "card number", "bank account"]),
 }
 
